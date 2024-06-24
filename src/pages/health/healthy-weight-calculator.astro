@@ -1,0 +1,11 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HealthyWeightCalculator from "../../components/health/HealthyWeightCalculator.svelte";
+---
+
+<Layout
+  title="Healthy Weight Calculator | Free Healthy Weight Calculator"
+  description="Free Healthy Weight Calculator, Discover your BMI with our user-friendly calculator. Track your Healthy Weight for a healthier lifestyle and better weight management."
+>
+  <HealthyWeightCalculator client:only="svelte" />
+</Layout>
