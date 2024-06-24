@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BmiCalculator from '../../components/health/BmiCalculator.svelte';
+
+
+
+---
+
+<Layout title='BMI Calculator | Body Mass Index Calculator | Free Body Mass Index Calculator'  description="Free BMI Calculator, Discover your BMI with our user-friendly calculator. Track your body mass index for a healthier lifestyle and better weight management.">
+
+   <BmiCalculator client:only="svelte" ></BmiCalculator>
+
+</Layout>

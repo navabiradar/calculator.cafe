@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BodyFatCalculator from '../../components/health/BodyFatCalculator.svelte';
+
+
+
+---
+
+<Layout title='Body Fat Calculator | Calculate Body Fat in seconds' description="Discover your body composition with our accurate Body Fat Calculator. Easily calculate your body fat percentage to manage your health and fitness goals.">
+
+   <BodyFatCalculator client:only="svelte" ></BodyFatCalculator>
+
+</Layout>
