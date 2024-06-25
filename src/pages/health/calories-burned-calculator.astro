@@ -1,0 +1,11 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CalorieBurnedCalculator from "../../components/health/CalorieBurnedCalculator.svelte";
+---
+
+<Layout
+  title="Calorie Burned Calculator | Calculate Calorie Burned in seconds"
+  description="Discover your body composition with our accurate Calorie Burned Calculator. Easily calculate your body fat percentage to manage your health and fitness goals."
+>
+  <CalorieBurnedCalculator client:only="svelte" />
+</Layout>

@@ -146,7 +146,7 @@
     printJS({
       printable: "result-print",
       type: "html",
-      header: "calculationviz.com | Fixed Deposit Calculator",
+      header: "calculator.com | Fixed Deposit Calculator",
     });
   }
 </script>
@@ -163,8 +163,8 @@
             <div class="col-6">
               <div class="form-label">Select Gender</div>
               <div>
-                <label class="form-check form-check-inline">
-                  <input
+                <label class="form-check form-check-inline" for="gender">
+                  <input 
                     class="form-check-input"
                     type="radio"
                     value="Male"
@@ -176,7 +176,7 @@
                   />
                   <span class="form-check-label">Men</span>
                 </label>
-                <label class="form-check form-check-inline">
+                <label class="form-check form-check-inline" for="gender">
                   <input
                     class="form-check-input"
                     type="radio"
@@ -192,15 +192,16 @@
               </div>
             </div>
             <div class="col-6">
-              <label class="form-label">Age</label>
-              <div class="input-group">
-                <input
+              <label class="form-label" for="age">Age</label>
+              <div class="input-group" >
+                <input 
                   type="number"
                   bind:value={formValues.age}
                   on:input={() => {
                     Result();
                   }}
                   class="form-control"
+                  
                 />
                 <span class="input-group-text"> Years </span>
               </div>
@@ -209,7 +210,7 @@
         </div>
 
         <div class="mb-3">
-          <label class="form-label">Height</label>
+          <label class="form-label" for="height">Height</label>
           <div class="input-group">
             <input
               type="number"
@@ -256,8 +257,8 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="form-label">Exercise Days</label>
-          <div class="input-group">
+          <label class="form-label" for="exercise">Exercise Days</label>
+          <div class="input-group" id="exercise">
             <select
               class="form-select w-20"
               bind:value={formValues.exerciseDays}
