@@ -21,7 +21,7 @@ function ClientPrint() {
 
 <div class="row">
       <div class="col-md-4">
-        <form class="card" >
+        <div class="card" >
                 <div class="card-header">
                   <h3 class="card-title">Fixed Deposit Calculator</h3>
                 </div>
@@ -29,7 +29,7 @@ function ClientPrint() {
                   
                   <div class="mb-3">
                       <div class="col-12">
-                        <label class="form-label">Initial Investment / Starting Amount</label>
+                        <label class="form-label" for="">Initial Investment / Starting Amount</label>
                         <div class="input-group mb-2">
                               
                               <input type="number"  min="0" bind:value={intialAmount} class="form-control"  placeholder="Enter Amount"  autocomplete="off">
@@ -40,7 +40,7 @@ function ClientPrint() {
                     
                         <div class="row">
                               <div class="col-6">
-                                  <label class="form-label">Interest Rate</label>
+                                  <label class="form-label" for="">Interest Rate</label>
                                   <div class="input-icon mb-3">
                                       <input type="number" value="" min="0" class="form-control" placeholder="Interest Rate">
                                       <span class="input-icon-addon">
@@ -50,7 +50,7 @@ function ClientPrint() {
                                     </div>
                               </div>
                               <div class="col-6">
-                                  <label class="form-label">Compound</label>
+                                  <label class="form-label" for="">Compound</label>
                                   <select name="user[day]" class="form-select">
                                     <option value="1">Daily</option>
                                     <option value="2">Weekly</option>
@@ -67,7 +67,7 @@ function ClientPrint() {
                         
                          <div class="row">
                               <div class="col-6">
-                                  <label class="form-label">Time Period</label>
+                                  <label class="form-label" for="">Time Period</label>
                                   <div class="input-icon mb-3">
                                       <input type="number" value="" min="0" class="form-control" placeholder="">
                                       <span class="input-icon-addon">
@@ -77,7 +77,7 @@ function ClientPrint() {
                                     </div>
                               </div>
                               <div class="col-6">
-                                  <label class="form-label">Type</label>
+                                  <label class="form-label" for="">Type</label>
                                   <select name="user[day]" class="form-select">
                                     <option selected value="1">Years</option>
                                     <option value="2">Months</option>
@@ -97,7 +97,7 @@ function ClientPrint() {
                   <button type="submit" class="btn btn-danger">Clear</button>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-          </form>
+              </div>
       
   </div>
 
