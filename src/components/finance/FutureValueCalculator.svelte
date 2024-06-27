@@ -4,10 +4,6 @@
 
     let finance = new Finance();
     
-    
-    
-    let intialAmount = 0;
-    
     let formValues = {
         initialAmount : 0,
         rate : 0,

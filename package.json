@@ -19,6 +19,7 @@
     "moment": "^2.30.1",
     "print-js": "^1.6.0",
     "svelte": "^4.2.18",
+    "to-words": "^4.0.1",
     "typescript": "^5.4.5"
   }
 }

@@ -80,7 +80,7 @@
               </div>
             </div>
             <div class="col-6">
-              <label class="form-label">Size Type</label>
+              <label class="form-label" for="">Size Type</label>
               <div class="input-group">
                 <select
                   class="form-select w-20"

@@ -88,7 +88,7 @@ function ClientPrint() {
                     </div>
                   
                     <div class="mb-3">
-                              <label class="form-label">Height</label>
+                              <label class="form-label" for="">Height</label>
                               <div class="input-group">
                                     <input type="number" bind:value={formValues.height} on:input={ () => {bmiResult()} }  class="form-control"> 
                                     <select class="form-select w-20"  bind:value={formValues.heightType} on:change={() => {bmiResult()}}>
