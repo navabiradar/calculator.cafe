@@ -7,6 +7,15 @@ import printJS from 'print-js';
 let intialAmount = 0;
 
 
+let formValues = {
+  initialAmount : 0,
+  interestRate : 0,
+  compoundingPeriod: 0,
+  time : 0,
+  result: 0,
+}
+
+
 
 function ClientPrint() {
   printJS({ printable: 'result-print', type: 'html', header: 'calculationviz.com | Fixed Deposit Calculator' })
@@ -40,7 +49,7 @@ function ClientPrint() {
                     
                         <div class="row">
                               <div class="col-6">
-                                  <label class="form-label" for="">Interest Rate</label>
+                                  <label class="form-label" for="interest">Interest Rate</label>
                                   <div class="input-icon mb-3">
                                       <input type="number" value="" min="0" class="form-control" placeholder="Interest Rate">
                                       <span class="input-icon-addon">
@@ -50,7 +59,7 @@ function ClientPrint() {
                                     </div>
                               </div>
                               <div class="col-6">
-                                  <label class="form-label" for="">Compound</label>
+                                  <label class="form-label" for="compound">Compound</label>
                                   <select name="user[day]" class="form-select">
                                     <option value="1">Daily</option>
                                     <option value="2">Weekly</option>
@@ -67,7 +76,7 @@ function ClientPrint() {
                         
                          <div class="row">
                               <div class="col-6">
-                                  <label class="form-label" for="">Time Period</label>
+                                  <label class="form-label" for="time">Time Period</label>
                                   <div class="input-icon mb-3">
                                       <input type="number" value="" min="0" class="form-control" placeholder="">
                                       <span class="input-icon-addon">
@@ -77,7 +86,7 @@ function ClientPrint() {
                                     </div>
                               </div>
                               <div class="col-6">
-                                  <label class="form-label" for="">Type</label>
+                                  <label class="form-label" for="type">Type</label>
                                   <select name="user[day]" class="form-select">
                                     <option selected value="1">Years</option>
                                     <option value="2">Months</option>
@@ -97,7 +106,7 @@ function ClientPrint() {
                   <button type="submit" class="btn btn-danger">Clear</button>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-              </div>
+      </div>
       
   </div>
 
