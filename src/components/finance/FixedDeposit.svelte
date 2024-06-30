@@ -64,8 +64,8 @@ function Result() {
 
 
     formValues.result = finance.CI(formValues.rate, formValues.numOfCompounding, formValues.initialAmount, formValues.numOfPeriods);
-
-    formValues.words = toWords.convert(formValues.result);
+    formValues.interestEarned = (formValues.result - formValues.initialAmount ).toFixed(2);
+   
 
 
 }

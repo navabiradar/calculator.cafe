@@ -81,7 +81,7 @@
     
     
         formValues.result = finance.CI(formValues.rate, formValues.numOfCompounding, formValues.initialAmount, formValues.numOfPeriods);
-    
+        formValues.interestEarned = (formValues.result - formValues.initialAmount ).toFixed(2);
     
     }
     
