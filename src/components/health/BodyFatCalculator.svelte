@@ -90,7 +90,7 @@ function ClientPrint() {
                             </div>
                           </div>
                           <div class="col-6">
-                              <label class="form-label">Age</label>
+                              <label class="form-label" for="">Age</label>
                               <div class="input-group">
                                     <input type="number" bind:value={formValues.age} on:input={ () => {Result()} }  class="form-control"> 
                                     <span class="input-group-text">
@@ -102,7 +102,7 @@ function ClientPrint() {
                     </div>
                   
                     <div class="mb-3">
-                              <label class="form-label">Height</label>
+                              <label class="form-label" for="">Height</label>
                               <div class="input-group">
                                     <input type="number" bind:value={formValues.height} on:input={ () => {Result()} }  class="form-control"> 
                                     <select class="form-select w-20"  bind:value={formValues.heightType} on:change={() => {Result()}}>
@@ -116,7 +116,7 @@ function ClientPrint() {
                               </div>
                     </div>
                     <div class="mb-3">
-                              <label class="form-label">Weight</label>
+                              <label class="form-label" for="">Weight</label>
                               <div class="input-group">
                                     <input type="number" bind:value={formValues.weight}  on:input={ () => {Result()}  } class="form-control"> 
                                     <select class="form-select w-20"  bind:value={formValues.weightType} on:change={() => {Result()}}>

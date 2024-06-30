@@ -65,7 +65,7 @@ function ClientPrint() {
                     </div>
                   
                     <div class="mb-3">
-                              <label class="form-label">Distance</label>
+                              <label class="form-label" for="">Distance</label>
                               <div class="input-group">
                                     <input type="number" bind:value={formValues.distance} on:input={ () => {Result()} }  class="form-control"> 
                                     <select class="form-select w-20"  bind:value={formValues.distanceType} on:change={() => {Result()}}>
@@ -79,7 +79,7 @@ function ClientPrint() {
                               </div>
                     </div>
                     <div class="mb-3">
-                              <label class="form-label">Time</label>
+                              <label class="form-label" for="">Time</label>
                               <div class="input-group">
                                     <input type="number" bind:value={formValues.time} on:input={ () => {Result()} }  class="form-control"> 
                                     <select class="form-select w-20"  bind:value={formValues.timeType} on:change={() => {Result()}}>

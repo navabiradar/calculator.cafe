@@ -1,7 +1,6 @@
 <script lang="ts">
   import printJS from "print-js";
-  import health_calc from "@widlestudiollp/health-calculation";
-
+  
   const formValues = {
     gender: "Male",
     age: 0,
@@ -10,7 +9,7 @@
     height: 0,
     heightType: "Feet",
     exerciseDays: 0,
-    result: 0,
+    result: "0",
     summary: "",
     resultType: "",
   };
@@ -234,7 +233,7 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="form-label">Weight</label>
+          <label class="form-label" for="">Weight</label>
           <div class="input-group">
             <input
               type="number"

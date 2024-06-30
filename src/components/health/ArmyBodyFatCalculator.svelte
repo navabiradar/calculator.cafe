@@ -34,7 +34,7 @@
     printJS({
       printable: "result-print",
       type: "html",
-      header: "calculationviz.com | Fixed Deposit Calculator",
+      header: "calculator.cafe | Fixed Deposit Calculator",
     });
   }
 </script>
@@ -98,7 +98,7 @@
         </div>
 
         <div class="mb-3">
-          <label class="form-label">Height</label>
+          <label class="form-label" for="">Height</label>
           <div class="input-group">
             <input
               type="number"
@@ -124,7 +124,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="mb-3">
-              <label class="form-label">Waist</label>
+              <label class="form-label" for="">Waist</label>
               <div class="input-group">
                 <input
                   type="number"
@@ -139,7 +139,7 @@
           </div>
           <div class="col-md-4">
             <div class="mb-3">
-              <label class="form-label">Neck</label>
+              <label class="form-label" for="">Neck</label>
               <div class="input-group">
                 <input
                   type="number"
@@ -154,7 +154,7 @@
           </div>
           <div class="col-md-4">
             <div class="mb-3">
-              <label class="form-label">Hip</label>
+              <label class="form-label" for="">Hip</label>
               <div class="input-group">
                 <input
                   type="number"
@@ -219,7 +219,7 @@
         </div>
       </div>
       <div class="card-footer text-end">
-        <a href="" class="btn btn-facebook w-20" on:click={ClientPrint}>
+        <a href="#" class="btn btn-facebook w-20" on:click={ClientPrint}>
           <!-- Download SVG icon from http://tabler-icons.io/i/brand-facebook -->
           <svg
             xmlns="http://www.w3.org/2000/svg"

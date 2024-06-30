@@ -102,7 +102,7 @@ function ClientPrint() {
                               </div>
                     </div>
                     <div class="mb-3">
-                              <label class="form-label">Weight</label>
+                              <label class="form-label" for="">Weight</label>
                               <div class="input-group">
                                     <input type="number" bind:value={formValues.weight}  on:input={ () => {bmiResult()}  } class="form-control"> 
                                     <select class="form-select w-20"  bind:value={formValues.weightType} on:change={() => {bmiResult()}}>
