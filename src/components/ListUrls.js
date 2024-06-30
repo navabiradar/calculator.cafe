@@ -1,7 +1,7 @@
-<script type="module" >
 
-    export const urlsName = {
-       finance : [
+export const urlsLists = 
+    { 
+        finance : [
         {
             name: "Fixed Deposit Calculator",
             url: "/finance/fixed-deposit-calculator",
@@ -15,7 +15,7 @@
         {
             name: "Recurring Deposit Calculator",
             url: "/finance/recurring-deposit-calculator",
-            status: true,
+            status: false,
         },
         {
             name: "Investment Calculator",
@@ -102,7 +102,7 @@
             url: "/finance/amortization-calculator",
             status: false,
         },
-
+    
        ],
        health : [
         {
@@ -145,9 +145,48 @@
             url: "/health/calories-burned-calculator",
             status: true,
         },
+       ],
+       units : [
+        {
+            name: "Body Mass Index(BMI) Calculator",
+            url: "/health/bmi-calculator",
+            status: false,
+        },
+        {
+            name: "Body Fat Calculator",
+            url: "/health/body-fat-calculator",
+            status: false,
+        },
+        {
+            name: "Ideal Weight Calculator",
+            url: "/health/body-fat-calculator",
+            status: false,
+        },
+        {
+            name: "PACE Calculator",
+            url: "/health/pace-calculator",
+            status: false,
+        },
+        {
+            name: "Army Body Fat Calculator",
+            url: "/health/army-body-fat-calculator",
+            status: false,
+        },
+        {
+            name: "Calorie Calculator",
+            url: "/health/calorie-calculator",
+            status: false,
+        },
+        {
+            name: "Health Weight Calculator",
+            url: "/health/healthy-weight-calculator",
+            status: false,
+        },
+        {
+            name: "Calories Burned Calculator",
+            url: "/health/calories-burned-calculator",
+            status: false,
+        },
        ]
-
-    }
-
-
-</script>
+    
+};

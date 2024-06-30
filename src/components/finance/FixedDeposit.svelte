@@ -1,27 +1,28 @@
-<script>
+<script >
 import printJS from 'print-js';
-import { Finance } from 'financejs'
-import { ToWords } from 'to-words';
+import { Finance } from 'financejs';
+import {currency} from './Currency.js';
 
-let toWords = new ToWords();
+let cur = currency
+
 
 let finance = new Finance();
-    
+
 let formValues = {
-    initialAmount : 0,
-    rate : 0,
-    timePeriod: 0,
-    periods: "Years",
-    compoundInterest: "Quaterly",
-    interestEarned: 0,
-    numOfCompounding:0,
-    numOfPeriods:0,
-    result: 0,
-    words: "",
-}
-
-
-
+  currency: "USD",
+  initialAmount : 0,
+  rate : 0,
+  timePeriod: 0,
+  periods: "Years",
+  compoundInterest: "Quaterly",
+  interestEarned: 0,
+  numOfCompounding:0,
+  numOfPeriods:0,
+  result: 0,
+  words: "",
+  currencyIcon: '',
+  localeCode: 'en-US',
+} 
 
 function Result() {
 
@@ -88,6 +89,26 @@ function ClientPrint() {
                   <h3 class="card-title">Fixed Deposit Calculator</h3>
                 </div>
                 <div class="card-body">
+                  <div class="mb-3">
+                    <label class="form-label" for="">Select Currency</label>
+                    <div class="form-selectgroup">
+                      
+                      {#each cur as item }
+                        <label class="form-selectgroup-item">
+                          <input type="radio" bind:group={formValues.currency}    class="form-selectgroup-input" value={item.shortName} >
+                          <span class="form-selectgroup-label"><!-- Download SVG icon from http://tabler-icons.io/i/sun -->
+                            {@html item.icon}
+                          </span>
+                        </label>
+                      {/each}
+                      
+                        
+                       
+                    
+
+
+                    </div>
+                  </div>
                   
                   <div class="mb-3">
                       <div class="col-12">
@@ -160,6 +181,8 @@ function ClientPrint() {
                   <button type="submit" on:click={() => {Result()}} class="btn btn-primary">Submit</button>
                 </div>
 
+
+                
                
 
                 
@@ -186,7 +209,7 @@ function ClientPrint() {
                               <label class="form-label page-title text-uppercase" for="">Interest Earned</label>
                               <div class="input-group mb-2">
                                 
-                                <p class ="page-title" >{ formValues.result}</p>
+                                <p class ="page-title" >{ formValues.result - formValues.initialAmount}</p>
                               </div>
                           </div>
                           <div class="col-4">
@@ -197,16 +220,7 @@ function ClientPrint() {
                               </div>
                           </div>
                       </div>
-                      <div class="row">
-                        <div class="col-12">
-                            <label class="form-label page-title text-uppercase" for="">In Words: </label>
-                            <div class="input-group mb-2">
-                             
-                              <p class ="page-title" >{ formValues.words }</p>
-                            </div>
-                        </div>
-                        
-                    </div>
+                     
                       <div class="row">
                           <div class="col-3">
                               <label class="form-label text-uppercase" for="">Starting Amount</label>
@@ -219,7 +233,7 @@ function ClientPrint() {
                               <label class="form-label  text-uppercase" for="">Interest Rate</label>
                               <div class="input-group mb-2">
                                 
-                                <p class ="" >{formValues.rate}</p>
+                                <p class ="" >@ &nbsp;{formValues.rate} &nbsp; %</p>
                               </div>
                           </div>
                           <div class="col-3">
@@ -233,7 +247,7 @@ function ClientPrint() {
                               <label class="form-label  text-uppercase" for="">For a Period</label>
                               <div class="input-group mb-2">
                                 
-                                <p class ="" >{formValues.periods}</p>
+                                <p class ="" >{formValues.timePeriod} &nbsp;{formValues.periods}</p>
                               </div>
                           </div>
                       </div>
