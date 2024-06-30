@@ -125,9 +125,19 @@
               <div class="dropdown-menu">
                 <div class="dropdown-menu-columns">
                   <div class="dropdown-menu-column">
-                    <a class="dropdown-item" href="./coming-soon">
-                      Coming Soon <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">Upcoming</span>
-                    </a>
+                    {#each urls['dateTime'] as url }
+
+                    {#if url.status === true}
+                        <a class="dropdown-item" href={url.url}>
+                            {@html svgList[0]} &nbsp; {url.name} &nbsp; <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">Ready</span>
+                        </a>
+                    {:else}
+                        <a class="dropdown-item" href="/coming-soon">
+                            {@html svgList[1]} &nbsp; {url.name} &nbsp; <span class="badge badge-sm bg-yellow-lt text-uppercase ms-auto">Cooking</span>
+                        </a> 
+                    {/if}
+                        
+                   {/each}
                     
                 </div>
               </div>

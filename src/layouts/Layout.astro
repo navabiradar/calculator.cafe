@@ -11,7 +11,7 @@ const { title, description } = Astro.props
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>{title}</title>
-    
+    <link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="description" content={description}>
 		<link rel="icon" type="image/x-icon" href="/favicon.svg">
     <!-- CSS files -->
@@ -87,7 +87,7 @@ const { title, description } = Astro.props
                   <li class="list-inline-item"><a href="/contact-us"  class="link-secondary" rel="noopener">Contact Us</a></li>
                   <li class="list-inline-item"><a href="/privacy-policy" class="link-secondary">Privacy Policy</a></li>
                   <li class="list-inline-item"><a href="/terms-of-use" class="link-secondary">Terms of Use</a></li>
-                  <li class="list-inline-item"><a href="/site-map"  class="link-secondary" rel="noopener">Site Map</a></li>
+                  
                   <li class="list-inline-item">
                     <a href="/" class="link-secondary" rel="noopener">
                       <!-- Download SVG icon from http://tabler-icons.io/i/heart -->Made With

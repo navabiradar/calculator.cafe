@@ -10,7 +10,12 @@ export const urlsLists =
         {
             name: "Compound Interest Calculator",
             url: "/finance/compound-interest-calculator",
-            status: false,
+            status: true,
+        },
+        {
+            name: "Daily Compound Calculator",
+            url: "/finance/daily-compound-calculator",
+            status: true,
         },
         {
             name: "Recurring Deposit Calculator",
@@ -185,6 +190,23 @@ export const urlsLists =
         {
             name: "Calories Burned Calculator",
             url: "/health/calories-burned-calculator",
+            status: false,
+        },
+       ],
+       dateTime : [
+        {
+            name: "Count Days",
+            url: "/date-time/count-days",
+            status: false,
+        },
+        {
+            name: "Add Days",
+            url: "/date-time/add-days",
+            status: false,
+        },
+        {
+            name: "Week Day",
+            url: "/date-time/week-days",
             status: false,
         },
        ]

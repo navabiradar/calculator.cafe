@@ -1,6 +1,6 @@
 <script>
-    import {urlsList} from "../ListUrls";
-    
+    import {urlsLists} from "../ListUrls";
+
 
 
 </script>
