@@ -13,6 +13,16 @@ const { title, description } = Astro.props
     <title>{title}</title>
     <link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="description" content={description}>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K2GX5PVL');</script>
+    <!-- End Google Tag Manager -->
+
+
+
 		<link rel="icon" type="image/x-icon" href="/favicon.svg">
     <!-- CSS files -->
     <link href="/css/tabler.min.css?1684106062" rel="stylesheet"/>
@@ -35,6 +45,10 @@ const { title, description } = Astro.props
     </style>
   </head>
   <body >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2GX5PVL"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <!-- <script src="./dist/js/demo-theme.min.js?1684106062"></script> -->
     <div class="page">
       <!-- Navbar -->
@@ -118,5 +132,9 @@ const { title, description } = Astro.props
     <!-- Tabler Core -->
     
     <!-- <script src="./dist/js/demo.min.js?1684106062" defer></script> -->
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cda5cedcea1a4f56955a954844d26ef9"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+
   </body>
 </html>

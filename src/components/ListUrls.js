@@ -197,7 +197,7 @@ export const urlsLists =
         {
             name: "Count Days",
             url: "/date-time/count-days",
-            status: false,
+            status: true,
         },
         {
             name: "Add Days",
