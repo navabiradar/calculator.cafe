@@ -1,5 +1,5 @@
 ---
-import moment from "moment";
+import {format,endOfDay} from "date-fns"
 import Navbar from "../components/Navbar.svelte"
 const { title, description } = Astro.props
 ---
@@ -115,7 +115,7 @@ const { title, description } = Astro.props
               <div class="col-12 col-lg-auto mt-3 mt-lg-0">
                 <ul class="list-inline list-inline-dots mb-0">
                   <li class="list-inline-item">
-                    Copyright &copy; { moment().format("YYYY") }
+                    Copyright &copy; { format(endOfDay(new Date()), "yyyy") }
                     <a href="/" class="link-secondary">Calculator Cafe</a>.
                     All rights reserved.
                   </li>
