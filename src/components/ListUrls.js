@@ -122,7 +122,7 @@ export const urlsLists =
         },
         {
             name: "Ideal Weight Calculator",
-            url: "/health/body-fat-calculator",
+            url: "/health/ideal-weight-calculator",
             status: true,
         },
         {
