@@ -85,7 +85,7 @@
     
         formValues.result = finance.CI(formValues.rate, formValues.numOfCompounding, formValues.initialAmount, formValues.numOfPeriods);
     
-        formValues.interestEarned = (formValues.result - formValues.initialAmount ).toFixed(2);
+        formValues.words = toWords.convert(formValues.result);
     
     
     }
@@ -253,7 +253,7 @@
                                   <label class="form-label  text-uppercase" for="">Interest Rate</label>
                                   <div class="input-group mb-2">
                                     
-                                    <p class ="" >{formValues.rate}</p>
+                                    <p class ="" >{formValues.interestRate}</p>
                                   </div>
                               </div>
                               <div class="col-3">
